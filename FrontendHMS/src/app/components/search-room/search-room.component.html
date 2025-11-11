@@ -1,0 +1,49 @@
+
+<div class="searchroom-container d-flex justify-content-center align-items-center">
+  <div class="searchroom-card shadow-lg p-5">
+    <h2 class="text-center mb-4 text-primary fw-bold">🏨 Search Room</h2>
+
+    <div class="text-center mb-4">
+      <button class="btn btn-sky px-4 py-2" (click)="loadRooms()">🔍 Load Rooms</button>
+      <a routerLink="/reception" class="btn btn-outline-sky btn-outline-light px-4 m-2">⬅️ Back</a>
+    </div>
+    
+
+    <div class="table-responsive">
+      <table class="table table-hover align-middle text-center">
+        <thead class="table-primary">
+          <tr>
+            <th>Room No</th>
+            <th>Availability</th>
+            <th>Price</th>
+            <th>Clean Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let r of rooms">
+            <td>{{ r.roomNumber }}</td>
+            <td>
+              <span
+                class="badge"
+                [ngClass]="r.availability === 'Available' ? 'bg-success' : 'bg-danger'"
+              >
+                {{ r.availability }}
+              </span>
+            </td>
+            <td>₹{{ r.price }}</td>
+            <td>
+              <span
+                class="badge"
+                [ngClass]="r.cleanStatus === 'Cleaned' ? 'bg-info' : 'bg-warning'"
+              >
+                {{ r.cleanStatus }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    
+  </div>
+</div>

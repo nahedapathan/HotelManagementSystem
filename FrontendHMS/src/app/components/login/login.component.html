@@ -1,0 +1,49 @@
+<header class="d-flex align-items-center justify-content-center shadow-sm">
+  <h2 class="text-primary fw-bold m-0">RoyalStay Hotel Management</h2>
+</header>
+<div class="login-container d-flex align-items-center justify-content-center">
+  <div class="login-card shadow-lg d-flex">
+    
+    <!-- LEFT IMAGE SECTION -->
+    <div class="login-image position-relative">
+      <img src="../../../assets/img/loginimg.webp" alt="login image" />
+      <div class="orange-strip text-center text-white py-2">
+        <h4 class="mb-0 fw-bold">HOTEL MANAGEMENT</h4>
+        <p class="mb-0 small">SMART by RoyalStay</p>
+      </div>
+    </div>
+
+    <!-- RIGHT FORM SECTION -->
+    <div class="login-form p-4">
+      <h3 class="text-center mb-4 fw-bold text-primary">Login Form</h3>
+
+      <form (ngSubmit)="login()">
+        
+
+        <div class="mb-3">
+          <label class="form-label fw-semibold">User Name</label>
+          <input type="text" class="form-control" [(ngModel)]="username" name="username" required />
+        </div>
+
+        <div class="mb-4">
+          <label class="form-label fw-semibold">Password</label>
+          <input type="password" class="form-control" [(ngModel)]="password" name="password" required />
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+          <button type="submit" class="btn btn-sky w-50 me-2 fw-semibold">Login</button>
+          <button type="button" class="btn btn-outline-secondary w-50 fw-semibold" routerLink="/">Cancel</button>
+        </div>
+
+        <div class="footer">
+
+        </div>
+
+        
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="d-flex align-items-center justify-content-center shadow-sm">
+  <p class="m-0 text-primary fw-semibold">&copy; 2025 RoyalStay Hotels</p>
+</footer>

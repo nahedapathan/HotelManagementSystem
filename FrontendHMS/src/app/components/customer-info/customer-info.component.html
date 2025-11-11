@@ -1,0 +1,48 @@
+<div class="customer-info-container">
+  <div class="header d-flex justify-content-between align-items-center mb-4">
+    <h2 class="page-title">👤 Customer Information</h2>
+    <div>
+      <button class="btn btn-sky me-2" (click)="loadCustomers()">🔄 Load Data</button>
+      <button class="btn btn-outline-light" routerLink="/reception">⬅️ Back</button>
+    </div>
+  </div>
+
+  <div class="table-wrapper shadow-lg">
+    <table class="table table-hover align-middle">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Country</th>
+          <th>Room</th>
+          <th>Status</th>
+          <th>Deposit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of customers">
+          <td>{{ c.id }}</td>
+          <td>{{ c.number }}</td>
+          <td>{{ c.name }}</td>
+          <td>{{ c.gender }}</td>
+          <td>{{ c.country }}</td>
+          <td>{{ c.room.roomNumber }}</td>
+          <td>
+            <span
+              class="badge"
+              [ngClass]="{
+                'bg-success': c.checkinStatus === 'checkIn',
+                'bg-danger': c.checkinStatus === 'checkOut'
+              }"
+            >
+              {{ c.checkinStatus }}
+            </span>
+          </td>
+          <td>₹ {{ c.deposit }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

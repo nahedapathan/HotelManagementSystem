@@ -1,0 +1,110 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+/* MAIN CONTAINER */
+.login-container {
+  height: calc(100vh - 160px); /* full viewport minus header & footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* CARD LAYOUT */
+.login-card {
+  width: 900px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 100%;
+  display: flex;
+  
+}
+
+/* LEFT IMAGE SECTION */
+.login-image {
+  width: 50%;
+  position: relative;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.orange-strip {
+  background-color: #f57c00;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* RIGHT FORM SECTION */
+.login-form {
+  width: 50%;
+  background-color: #ffffff;
+}
+
+.text-primary {
+  color: #0288d1 !important;
+}
+
+/* BUTTONS */
+.btn-sky {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+}
+
+.btn-sky:hover {
+  background-color: #0277bd;
+}
+
+.btn-outline-secondary {
+  border-color: #0288d1;
+  color: #0288d1;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #0288d1;
+  color: white;
+}
+
+/* LINKS */
+.link {
+  color: #0288d1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 992px) {
+  .login-card {
+    width: 90%;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+}
+
+header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0f7fa;
+  height: 80px;
+}

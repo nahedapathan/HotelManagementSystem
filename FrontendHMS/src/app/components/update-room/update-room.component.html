@@ -1,0 +1,77 @@
+
+
+<div class="updateroom-container d-flex justify-content-center align-items-center">
+  <div class="updateroom-card shadow-lg p-5">
+    <h2 class="text-center mb-4 text-primary fw-bold">🛏️ Update Room Details</h2>
+
+    <form (ngSubmit)="updateRoom()" class="row g-3">
+      <div class="col-md-4">
+        <label class="form-label fw-semibold">Room Number</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="roomNumber"
+          name="room"
+          required
+        />
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label fw-semibold">Availability</label>
+        <!-- <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="availability"
+          name="ava"
+          required
+        /> -->
+        <select class="form-select" [(ngModel)]="availability" name="ava" required>
+           <option value="">Select Availability</option>
+            <option>Available</option>
+            <option>Occupied</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label fw-semibold">Clean Status</label>
+        <!-- <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="cleanStatus"
+          name="status"
+        /> -->
+        <select class="form-select" [(ngModel)]="cleanStatus" name="status" required>
+           <option value="">Select Clean Status</option>
+            <option>Clean</option>
+            <option>Dirty</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label fw-semibold">Bed Type</label>
+        
+        <select class="form-select" [(ngModel)]="bedType" name="type" required>
+           <option value="">Select Bed Type</option>
+            <option>Single</option>
+            <option>Double</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label fw-semibold">Price</label>
+        <input
+          type="number"
+          class="form-control"
+          [(ngModel)]="price"
+          name="price"
+          required
+        />
+      </div>
+
+      <div class="col-12 text-center mt-4">
+        <button type="submit" class="btn btn-sky px-4 me-2">💾 Update</button>
+        <a routerLink="/reception" class="btn btn-outline-sky px-4">⬅️ Back</a>
+      </div>
+    </form>
+  </div>
+</div>

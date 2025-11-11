@@ -1,0 +1,59 @@
+
+
+<div class="update-check-container">
+  <div class="update-card">
+    <div class="update-header">
+      <h3>Update Check</h3>
+      <p>Modify the customer check-in or check-out status</p>
+    </div>
+
+    <form (ngSubmit)="updateCheck()" class="update-form">
+      <!-- Customer ID -->
+      <div class="form-group">
+        <label for="customerId">Customer ID</label>
+        <input
+          type="number"
+          id="customerId"
+          class="form-control"
+          [(ngModel)]="customerId"
+          name="id"
+          placeholder="Enter Customer ID"
+          required
+        />
+      </div>
+
+      <!-- Room Number -->
+      <div class="form-group">
+        <label for="roomNumber">Room Number</label>
+        <input
+          type="text"
+          id="roomNumber"
+          class="form-control"
+          [(ngModel)]="roomNumber"
+          name="room"
+          placeholder="Enter Room Number"
+        />
+      </div>
+
+      <!-- Status -->
+      <div class="form-group">
+        <label for="status">Status</label>
+        <select
+          id="status"
+          class="form-select"
+          [(ngModel)]="status"
+          name="status"
+        >
+          <option value="checkedin">Checked In</option>
+          <option value="checkedout">Checked Out</option>
+        </select>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-buttons">
+        <button type="submit" class="btn btn-update">Update</button>
+        <a routerLink="/reception" class="btn btn-back">Back</a>
+      </div>
+    </form>
+  </div>
+</div>

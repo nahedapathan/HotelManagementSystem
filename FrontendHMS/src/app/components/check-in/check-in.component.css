@@ -1,0 +1,113 @@
+.checkin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    background: #f4f6f9;
+    min-height: 100vh;
+  }
+
+  .checkin-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+  }
+
+  .checkin-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .checkin-header h3 {
+    color: #4169E1; /* Royal Blue */
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .checkin-header p {
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+
+  .form-control:focus {
+    outline: none;
+    border-color: #4169E1;
+    box-shadow: 0 0 5px rgba(65,105,225,0.3);
+  }
+
+  .form-buttons {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .btn-checkin {
+    background-color: #4169E1;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+
+  .btn-checkin:hover {
+    background-color: #3654b3;
+  }
+
+  .btn-back {
+    background-color: #fff;
+    color: #4169E1;
+    border: 2px solid #4169E1;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+
+  .btn-back:hover {
+    background-color: #4169E1;
+    color: #fff;
+  }
+
+  @media (max-width: 576px) {
+    .checkin-card {
+      padding: 30px 20px;
+    }
+
+    .btn-checkin,
+    .btn-back {
+      width: 100%;
+      margin: 5px 0;
+    }
+
+    .btn-back {
+      margin-left: 0;
+    }
+  }

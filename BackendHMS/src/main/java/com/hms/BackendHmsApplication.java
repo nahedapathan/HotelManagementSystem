@@ -1,0 +1,14 @@
+package com.hms;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BackendHmsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BackendHmsApplication.class, args);
+		System.err.println("Project Running");
+	}
+
+}

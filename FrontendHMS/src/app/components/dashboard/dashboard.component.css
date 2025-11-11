@@ -1,0 +1,89 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.royalstay-hero{
+  background: url("../../../assets/img/background.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins',sans-serif;
+  color:#fff;
+}
+
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right,rgba(0,0,0,0.5),rgba(64,25,7,0.6));
+  z-index:1 ;
+}
+
+.hero-content
+{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.title
+{
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 255,255,0.6);
+}
+.title span {
+  color: #70f8ff;
+  text-shadow: 0 0 20px rgb(21, 214, 228);
+}
+
+.subtitle
+{
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #f2f2f2;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+.explore-btn
+{
+  margin-top: 2rem;
+  background: linear-gradient(45deg,#06aeaefc,#0be0d9c8);
+  border: none;
+  color: #2b1d0e;
+  padding: 12px 45px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(6, 167, 172, 0.4);
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+
+.explore-btn:hover{
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(255, 204, 112, 0.6);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}

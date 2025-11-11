@@ -1,0 +1,71 @@
+.updateroom-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #b3e5fc, #e1f5fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.updateroom-card {
+  width: 90%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* Title */
+.text-primary {
+  color: #0288d1 !important;
+}
+
+/* Labels */
+.form-label {
+  color: #01579b;
+}
+
+/* Buttons */
+.btn-sky {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-sky:hover {
+  background-color: #0277bd;
+  transform: scale(1.05);
+}
+
+.btn-outline-sky {
+  border: 2px solid #0288d1;
+  color: #0288d1;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-sky:hover {
+  background-color: #0288d1;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

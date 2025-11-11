@@ -1,0 +1,82 @@
+.searchroom-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #b3e5fc, #e1f5fe);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.searchroom-card {
+  width: 90%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* Title */
+.text-primary {
+  color: #0288d1 !important;
+}
+
+/* Buttons */
+.btn-sky {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-sky:hover {
+  background-color: #0277bd;
+  transform: scale(1.05);
+}
+
+.btn-outline-sky {
+  border: 2px solid #0288d1;
+  color: #0288d1;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-sky:hover {
+  background-color: #0288d1;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Table */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #b3e5fc;
+  color: #01579b;
+  font-weight: 600;
+}
+
+.table tbody tr:hover {
+  background-color: #e1f5fe;
+  transition: all 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
